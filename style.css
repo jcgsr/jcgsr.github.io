@@ -6,7 +6,7 @@ body{
     margin-top: 40px;
 }
 #projeto{
-    background: linear-gradient(35deg, rgb(49, 49, 104), brown, rgb(44, 34, 34));
+    background: linear-gradient(35deg, black, gray, black);
 }
 img{
     width: 300px;
@@ -16,15 +16,15 @@ img{
 h1{
     text-align: center;
     font: bold;
+    font-size: 270%;
     color: aliceblue;
-    font-size: 250%;
     margin-top: 10%;
          
 }
 h3{
     text-align: center;
-    color: brown;
-    font-size: 180%;
+    color: rgb(88, 16, 16);
+    
 }
 h2{
     text-align: center;
@@ -53,12 +53,12 @@ a:hover{
 }
 .navbar{
     overflow: hidden;
-    background-color: rgb(131, 21, 21);
+    background-color:rgb(88, 16, 16);
     position: fixed;
     top: 0;
     left: 0;
     z-index: 9999; /* a mágica que faz com que o grid não fique na frente do menu*/
-    height: 50px;
+    height: 40px;
     width: 100%;
     font-weight: bolder;
     font-size: larger;
@@ -68,7 +68,7 @@ a:hover{
     display: block;
     color: aliceblue;
     text-align: center;
-    padding: 16px 18px;
+    padding: 1px 18px;
 }
 .nav a:hover{
     color: yellow;
@@ -76,47 +76,7 @@ a:hover{
 #contato{
     text-align: center;
     color: aliceblue;
+    background: linear-gradient(35deg, gray, black);
 }
 
-#contatoImg{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    text-align: center;
-    width: 100%;    
-}
-#imgT{
-    font-size: 30px;
-}
-#imgT:hover{
-    transform: translateY(8px);    
-}
-#imgL{
-    font-size: 30px;
-}
-#imgL:hover{
-    transform: translateY(8px);    
-}
-#imgZ{
-    font-size: 30px;
-}
-#imgZ:hover{
-    transform: translateY(8px);    
-}
-#fcc{
-    font-size: 30px;
-}
-#fcc:hover{
-    transform: translateY(8px);    
-}
-#github{
-    font-size: 30px;
-}
-#github:hover{
-    transform: translateY(8px); 
-}
-#email:hover{
-    transform: translateY(8px); 
-    color: yellow;
-}
+
