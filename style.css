@@ -160,3 +160,10 @@ a:hover{
     transform: translateY(8px); 
     color: yellow;
 }
+
+@media only screen and (max-width: 600px) {
+    html {
+      font-size: 1.25em;
+    }
+}
+
