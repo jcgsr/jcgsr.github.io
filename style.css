@@ -97,12 +97,12 @@ a:hover{
     color: aliceblue;
 }
 #sobre{
-    display: grid;
-    margin-left: 30px;
-    height: 350px; 
-    width: 100%;   
-    grid-template-columns: 24% 24%;
-    grid-column-gap: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: left;   
+}
+#hist{
+    flex-shrink: 38;
 }
 #imgT{
     font-size: 40px;
@@ -183,9 +183,11 @@ a:hover{
 
 @media only screen and (max-width: 600px) {
     .item{
-        width: 20%;
+        width: 40%;
         height: 20%;
     }
+    .navbar{
+        display: flex;
     .navbar a{
         float: left;
         text-align: left;
