@@ -183,10 +183,10 @@ a:hover{
 }
 
 @media only screen and (max-width: 600px) {
-    /*.item{
+    .item{
         width: 30%;
         height: 10%;
-    }*/
+    }
     .navbar{
         display: flex;
         width: auto;
