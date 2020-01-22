@@ -167,19 +167,19 @@ a:hover{
     }
     header{
         margin: auto;
-        display: inline-block;
+        display: block;
     }
     #container{
-        display: inline-block;
+        display: block;
     }
     #sobre{
-        display: inline-block;   
+        display: block;   
     }
     #hab{
-        display: inline-block;   
+        display: block;   
     }
     #contato{
-        display: inline-block;   
+        display: block;   
     }
 }
 
