@@ -99,7 +99,8 @@ a:hover{
 #sobre{
     display: flex;
     align-items: center;
-    justify-content: left;   
+    justify-content: left;
+    flex-direction: column;
 }
 #hist{
     flex-shrink: 38;
