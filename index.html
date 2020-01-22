@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" media="screen">
 
     <title>Portfolio de Jovane</title>
 </head>
@@ -17,38 +17,44 @@
         <header>
 
         <nav class="navbar">
+            <img src="images/jota.png" alt="Logo de Jovane" width="35px" style="padding: 8px">
             <a href="#contato">Contato</a>
             <a href="#projeto">Projetos</a>
             <a href="#sobre">Sobre</a>
         </nav>
         
         <section id="apresentar">
-        <h1>Olá, Eu sou Jovane</h1>
+        <h1 style="text-align: ;">Olá, Eu sou Jovane</h1>
         <h3>um desenvolvedor web iniciante</h3>
         </section>
         </header>
         <br>
-        
-        <h2>Estes são os meus projetos</h2>
         <section id="projeto">
-                    
-            <p>
-                <a href="https://quirky-fermi-9dd416.netlify.com/"><img src="images/piriquitaWebApp.png" alt="Site da Piriquita"></a>
-                
-                <a href="https://hardcore-euclid-fca293.netlify.com/"><img src="images/negaoWebApp.png" alt="Site do Negão"></a>
-                
-                <a href="https://goofy-poincare-70cae0.netlify.com/"><img src="images/mediaEscolarWebApp.png" alt="Média Escolar"></a>
-
-                <a href="https://cocky-kalam-e5a441.netlify.com/index.html"><img src="images/afinadorWebApp.png" alt="Afinador de Violão"></a>
             
-                <a href="https://tender-easley-994bf4.netlify.com/"><img src="images/imcWebApp.png" alt="IMC"></a>
-
-                <a href="https://awesome-perlman-211a20.netlify.com/"><img src="images/vim.png" alt="VIM"></a>
-            </p>
+            <h2>Estes são os meus projetos</h2>
             
-            </section>
+            <div id="container">
+            
+            <div id="piriquita"><a href="https://quirky-fermi-9dd416.netlify.com/"><img src="images/piriquitaWebApp.png" alt="Site da Piriquita" width="100%" height="100%"></a>
+            <a href="https://quirky-fermi-9dd416.netlify.com/">Piriquita</a></div>
+            
+            <div id="negao"><a href="https://hardcore-euclid-fca293.netlify.com/"><img src="images/negaoWebApp.png" alt="Site do Negão" width="100%" height="100%"></a>
+            <a href="https://hardcore-euclid-fca293.netlify.com/">Negão</a></div>
+            
+            <div id="media"><a href="https://goofy-poincare-70cae0.netlify.com/"><img src="images/mediaEscolarWebApp.png" alt="Média Escolar" width="100%" height="100%"></a>
+            <a href="https://goofy-poincare-70cae0.netlify.com/">Média Escolar</a></div>
+            
+            <div id="afinador"><a href="https://cocky-kalam-e5a441.netlify.com/index.html"><img src="images/afinadorWebApp.png" alt="Afinador de Violão" width="100%" height="100%"></a>
+            <a href="https://cocky-kalam-e5a441.netlify.com/index.html">Afinador</a></div>
+            
+            <div id="imc"><a href="https://tender-easley-994bf4.netlify.com/"><img src="images/imcWebApp.png" alt="IMC" width="100%" height="100%"></a>
+            <a href="https://tender-easley-994bf4.netlify.com/">IMC</a></div>
 
-        <br><br>
+             <div id="gastos"><a href="https://gastosmensais.000webhostapp.com/"><img src="images/firstPHPMySQL.png" alt="gastos" width="100%" height="100%"></a>
+            <a href="https://gastosmensais.000webhostapp.com/">1º PHP/MySQL</a></div>
+            </div>
+        </section>
+        <br>
         <div id="sobre">
             <div id="hist">
             <h2>Eu sou Jovane Rocha, 
@@ -57,43 +63,69 @@
             Depois de muitos (inúmeros) tutoriais e alguns cursos, adquiri
             experiêcia no básico de lógica de programação. Foi desenvolvendo 
             um site em Flask em 2019 que entrei em contato de verdade com HTML e depois disso não 
-            mais parei de estudar e aprender front-end development. Por enquanto, 
-            só tenho habilidades básicas de desenvolvimento em front-end. No entanto,
-            já iniciei os estudos de PHP com intuito de logo virar um 
-            desenvolvedor full-stack. <br><br> Tenho disponibilidade para trabalhos remotos. 
+            mais parei de estudar e aprender front-end development. Com mais outros cursos de back-end no final de 2019, já posso me considerar um full-stack iniciante.<br><br> Tenho disponibilidade para trabalhos remotos. 
             Se tiver algum interesse, por favor entre em <a href="#contato"><u>contato</u></a>.
             </p>
         </div>
-        <br>
         <div id="hab">
-            <h2>Ferramentas e Habilidades</h2>
-            <p style="color: aliceblue;">
-                VS Code • VIM • HTML5 • CSS3 • JavaScript • Gimp • Python (iniciante)
-                • SQLite • PHP (iniciante) • MySQL(iniciante)
-            </p>
+            <h2>Ferramentas e Habilidades</h2><br>
+            <ul style="color: aliceblue; margin-left: 60px;">
+                <li>VIM</li>
+                <li>Sublime Text</li>
+                <li>VS Code</li>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>Gimp</li>
+                <li>Python (iniciante)</li>
+                <li>PHP</li>
+                <li>MySQL</li>
+            </ul>
         </div>
+        </div>
+        <br>
+        <br>
+        <div id="contato">
+            <h1>Vamos trabalhar juntos...</h1>
+            <p><em>É só entrar em contato</em></p><br><br>
+            
+            <div id="contatoImg">
+            <div id="imgT">
+            <a href="https://twitter.com/teufel8?ref_src=twsrc%5Etfw"><img class="img"src="images/twitter.gif" alt="Twitter">Twitter</a>
+            </div> 
+            <div id="imgL">
+            <a href="https://br.linkedin.com/in/cabralguerra?trk=profile-badge"><img class="img" src="images/linkedin.gif" alt="Linkedin" style="width: 30px;">Linkedin</a>
+            </div>
+            <div id="imgZ">
+                <a href="https://api.whatsapp.com/send?phone=5579988284730&text=Entrar em contato"><img src="images/zap.gif" alt="Whatsapp" style="width: 40px;">Whatsapp</a>
+            </div>
+            <div id="fcc">
+                <a href="https://www.freecodecamp.org/jovane"><img src="images/fcc.gif" alt="Free Code Camp" style="width: 40px;">FCC</a>
+            </div>
+
+            <div id="github">
+                <a href="https://github.com/jcgsr"><img src="images/github.gif" alt="GitHub" style="width: 30px;">GitHub</a>
+            </div>
+
+            <div id="email">
+                
+                <form action="mailto:cabralguerra@gmail.com" method="post">
+                    <input style="font-family: 'PT Mono', monospace; font-size: 30px; opacity: 0.8;
+                    background-color: rgb(32, 25, 25); color: aliceblue;" 
+                    type="submit" value="Email" name="Enviar email">
+                </form>
+            </div>
         </div>
         
-        <section id="contato">
-            <h1>Vamos trabalhar juntos...</h1>
-            <h3><em>É só entrar em contato</em></h3>
-            
-           
-            <p style="text-align: center; font-size: larger;">
-                <a href="https://twitter.com/teufel8?ref_src=twsrc%5Etfw"><img class="img"src="images/twitter.gif" alt="Twitter" style="width: 40px; height: 30px;">Twitter</a> 
-                <a href="https://br.linkedin.com/in/cabralguerra?trk=profile-badge"><img class="img" src="images/linkedin.gif" alt="Linkedin" style="width: 30px; height: 30px;">Linkedin</a>
-                <a href="https://api.whatsapp.com/send?phone=5579988284730&text=Entrar em contato"><img src="images/zap.gif" alt="Whatsapp" style="width: 40px; height: 40px">Whatsapp</a>
-                <a href="https://www.freecodecamp.org/jovane"><img src="images/fcc.gif" alt="Free Code Camp" style="width: 40px; height: 40px;">FCC</a>
-                <a href="https://github.com/jcgsr"><img src="images/github.gif" alt="GitHub" style="width: 30px; height: 40px;">GitHub</a>
-            </p>
-            </section>
-           <br><br>
-        <p id="date" style="color: aliceblue; text-align: center;"></p>
-        <hr style=" height:0; border:0; border-top:1px solid brown;">
+        <br><br><br><br>
+        <p id="date"></p>
+        <hr style=" height:0; 
+        border:0; 
+        border-top:1px solid brown;">
         <br>
 
-        <footer style="color: aliceblue; text-align: center;">
-            &copy;2020 - Portfólio criado e desenvolvido por Jovane Rocha. <br>
+        <footer>
+            &copy;2019 - Portfólio criado e desenvolvido por Jovane Rocha. <br>
             Todos os Direitos Reservados.
         </footer>
 
