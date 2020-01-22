@@ -1,39 +1,78 @@
-@import url('https://fonts.googleapis.com/css?family=Cutive+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css?family=PT+Mono&display=swap');
 
 body{
-    font-family: 'Cutive Mono', monospace;
+    font-family: 'PT Mono', monospace;
     background: linear-gradient(35deg, black, rgb(46, 37, 37), gray);
     margin-top: 40px;
 }
-#projeto{
-    background: linear-gradient(35deg, black, gray, black);
-   
-}
-img{
-    width: 300px;
-    height: 250px;
-    padding: 20px;
-}
+
+
 h1{
     text-align: center;
     font: bold;
-    font-size: 270%;
     color: aliceblue;
-    margin-top: 10%;
+    font-size: 250%;
+    margin-top: 8%;
          
 }
 h3{
     text-align: center;
-    color: rgb(88, 16, 16);
-    
+    color: brown;
+    font-size: 180%;
 }
 h2{
     text-align: center;
     color: aliceblue;
 }
-
-#sobre{
+#container{
+    display: grid;
+    height: 650px; 
+    width: 100%;   
+    background: linear-gradient(35deg, rgb(49, 49, 104), brown, rgb(44, 34, 34));
+    grid-template-columns: 24% 24% 24%;
+    grid-template-rows: 40% 40%;
+    grid-column-gap: 70px;
+    grid-row-gap: 30px;
+    
+}
+#piriquita{
+    transform: translate(70px, 40px);
     text-align: center;
+    color: aliceblue;
+        
+}
+#negao{
+    transform: translate(120px, 40px);
+    text-align: center;
+    color: aliceblue;
+}
+#media{
+    transform: translate(150px, 40px);
+    text-align: center;
+    color: aliceblue;
+}
+#afinador{
+    transform: translate(70px, 50px);
+    text-align: center;
+    color: aliceblue;
+}
+#imc{
+    transform: translate(120px, 50px);
+    text-align: center;
+    color: aliceblue;
+}
+#gastos{
+    transform: translate(150px, 50px);
+    text-align: center;
+    color: aliceblue;
+}
+#sobre{
+    display: grid;
+    margin-left: 30px;
+    height: 350px; 
+    width: 100%;   
+    grid-template-columns: 24% 24%;
+    grid-column-gap: 70px;
 }
 
 a{
@@ -54,22 +93,20 @@ a:hover{
 }
 .navbar{
     overflow: hidden;
-    background-color:rgb(88, 16, 16);
+    background-color: rgb(131, 21, 21);
     position: fixed;
     top: 0;
     left: 0;
     z-index: 9999; /* a mágica que faz com que o grid não fique na frente do menu*/
-    height: 40px;
+    height: 50px;
     width: 100%;
-    font-weight: bolder;
-    font-size: larger;
 }
 .navbar a{
     float: right;
     display: block;
     color: aliceblue;
     text-align: center;
-    padding: 1px 18px;
+    padding: 16px 18px;
 }
 .nav a:hover{
     color: yellow;
@@ -77,7 +114,49 @@ a:hover{
 #contato{
     text-align: center;
     color: aliceblue;
-    background: linear-gradient(35deg, gray, black);
 }
-
-
+.img{
+    width: 50px;
+}
+#contatoImg{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    width: 100%;    
+}
+#imgT{
+    font-size: 40px;
+}
+#imgT:hover{
+    transform: translateY(8px);    
+}
+#imgL{
+    font-size: 40px;
+}
+#imgL:hover{
+    transform: translateY(8px);    
+}
+#imgZ{
+    font-size: 40px;
+}
+#imgZ:hover{
+    transform: translateY(8px);    
+}
+#fcc{
+    font-size: 40px;
+}
+#fcc:hover{
+    transform: translateY(8px);    
+}
+#github{
+    font-size: 40px;
+}
+#github:hover{
+    transform: translateY(8px); 
+}
+#email:hover{
+    transform: translateY(8px); 
+    color: yellow;
+}
