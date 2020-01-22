@@ -175,7 +175,8 @@ a:hover{
         width: 100%;
     }
     #container{
-        display: inline-grid;
+        display: flex;
+        flex-direction: column;
        
     }
     #menu a{
