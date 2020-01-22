@@ -170,7 +170,7 @@ a:hover{
         display: block;
     }
     #container{
-        display: block;
+        display: inline-grid;
     }
     #sobre{
         display: block;   
