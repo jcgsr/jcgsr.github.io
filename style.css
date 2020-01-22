@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Mono&display=swap');
 
+
+/*TAGS*/
 body{
     font-family: 'PT Mono', monospace;
     background: linear-gradient(35deg, black, rgb(46, 37, 37), gray);
@@ -12,7 +14,7 @@ h1{
     font: bold;
     color: aliceblue;
     font-size: 250%;
-    margin-top: 8%;
+    margin-top: 5%;
          
 }
 h3{
@@ -24,22 +26,50 @@ h2{
     text-align: center;
     color: aliceblue;
 }
+footer{
+    color: aliceblue;
+    text-align: center;
+}
+
+a{
+    color: aliceblue;
+    
+}
+a:link{
+    text-decoration: none;
+    color: white;
+}
+
+a:visited{
+    color: whitesmoke;
+    text-decoration: underline;
+}
+a:hover{
+    color: yellow;
+}
+
+/*IDS*/
 #container{
-    display: grid;
+    display: flex;
+    flex-direction: column;
+          
+}
+#grid{
     height: 650px; 
     width: 100%;   
     background: linear-gradient(35deg, rgb(49, 49, 104), brown, rgb(44, 34, 34));
-    grid-template-columns: 24% 24% 24%;
-    grid-template-rows: 40% 40%;
-    grid-column-gap: 70px;
-    grid-row-gap: 30px;
-    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: left;
+
+
 }
 #piriquita{
     transform: translate(70px, 40px);
     text-align: center;
     color: aliceblue;
-        
+            
 }
 #negao{
     transform: translate(120px, 40px);
@@ -73,58 +103,6 @@ h2{
     width: 100%;   
     grid-template-columns: 24% 24%;
     grid-column-gap: 70px;
-}
-
-a{
-    color: aliceblue;
-    
-}
-a:link{
-    text-decoration: none;
-    color: white;
-}
-
-a:visited{
-    color: whitesmoke;
-    text-decoration: underline;
-}
-a:hover{
-    color: yellow;
-}
-.navbar{
-    overflow: hidden;
-    background-color: rgb(131, 21, 21);
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 9999; /* a mágica que faz com que o grid não fique na frente do menu*/
-    height: 50px;
-    width: 100%;
-}
-.navbar a{
-    float: right;
-    display: block;
-    color: aliceblue;
-    text-align: center;
-    padding: 16px 18px;
-}
-.nav a:hover{
-    color: yellow;
-}
-#contato{
-    text-align: center;
-    color: aliceblue;
-}
-.img{
-    width: 50px;
-}
-#contatoImg{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    text-align: center;
-    width: 100%;    
 }
 #imgT{
     font-size: 40px;
@@ -160,42 +138,45 @@ a:hover{
     transform: translateY(8px); 
     color: yellow;
 }
-
-@media only screen and (max-width: 600px) {
-    .navbar {
-        margin: auto;
-    }
-    header{
-        margin: auto;
-    }
-    h1{
-        margin-top: 50px;
-    }
-    body{
-        width: 100%;
-    }
-    #container{
-        display: flex;
-        flex-direction: column;
-       
-    }
-    #menu a{
-        padding: 20px 10px;
-    }
-    #menu {
-        display: inline-block;
-    }
-    #sobre{
-        display: block;   
-    }
-    #hab{
-        display: block;   
-    }
-    #contato{
-        display: block;   
-    }
-    #contatoImg{
-        display: block;
-    }
+#contatoImg{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    width: 100%;    
 }
 
+
+/*CLASSES*/
+.navbar{
+    overflow: hidden;
+    background-color: rgb(131, 21, 21);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999; /* a mágica que faz com que o grid não fique na frente do menu*/
+    height: 50px;
+    width: 100%;
+}
+.navbar a{
+    float: right;
+    display: block;
+    color: aliceblue;
+    text-align: center;
+    padding: 16px 18px;
+}
+.nav a:hover{
+    color: yellow;
+}
+#contato{
+    text-align: center;
+    color: aliceblue;
+}
+.img{
+    width: 50px;
+}
+.item{
+    width: 380px;
+    height: 200px;
+}
