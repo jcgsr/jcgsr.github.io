@@ -164,7 +164,22 @@ a:hover{
 @media only screen and (max-width: 600px) {
     .navbar {
         margin: auto;
+    }
+    header{
+        margin: auto;
         display: inline-block;
+    }
+    #container{
+        display: inline-block;
+    }
+    #sobre{
+        display: inline-block;   
+    }
+    #hab{
+        display: inline-block;   
+    }
+    #contato{
+        display: inline-block;   
     }
 }
 
