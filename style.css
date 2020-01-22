@@ -169,7 +169,7 @@ a:hover{
         margin: auto;
     }
     h1{
-        margin-top: 200px;
+        margin-top: 25px;
     }
     body{
         width: 100%;
@@ -180,6 +180,12 @@ a:hover{
         grid-template-rows: 40% 40%;
         grid-column-gap: 70px;
         grid-row-gap: 30px;
+    }
+    #menu a{
+        padding: 20px 10px;
+    }
+    #menu {
+        display: inline-block;
     }
     #sobre{
         display: block;   
