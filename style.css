@@ -183,6 +183,12 @@ a:hover{
 
 @media only screen and (max-width: 600px) {
     .item{
-        width: 38px;
-        height: 20px;
-}
+        width: 30%;
+        height: 40%;
+    }
+    .nav a{
+        float: left;
+    }
+    
+ }
+    
