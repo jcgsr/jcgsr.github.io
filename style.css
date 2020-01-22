@@ -162,8 +162,9 @@ a:hover{
 }
 
 @media only screen and (max-width: 600px) {
-    html {
-      font-size: 1.25em;
+    .navbar {
+        margin: auto;
+        display: inline-block;
     }
 }
 
