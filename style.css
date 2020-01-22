@@ -169,17 +169,14 @@ a:hover{
         margin: auto;
     }
     h1{
-        margin-top: 25px;
+        margin-top: 50px;
     }
     body{
         width: 100%;
     }
     #container{
         display: inline-grid;
-        grid-template-columns: 24% 24% 24%;
-        grid-template-rows: 40% 40%;
-        grid-column-gap: 70px;
-        grid-row-gap: 30px;
+       
     }
     #menu a{
         padding: 20px 10px;
