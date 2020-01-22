@@ -183,10 +183,10 @@ a:hover{
 }
 
 @media only screen and (max-width: 600px) {
-    .item{
-        width: 60%;
-        height: 40%;
-    }
+    /*.item{
+        width: 30%;
+        height: 10%;
+    }*/
     .navbar{
         display: flex;
         width: auto;
@@ -203,8 +203,8 @@ a:hover{
         flex-direction: column;
     }
     #grid{
+        align-items: stretch; 
         flex-direction: column;
-        flex-wrap: wrap;
         justify-content: center;
     }
     
