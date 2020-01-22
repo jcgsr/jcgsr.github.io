@@ -170,13 +170,17 @@ a:hover{
         display: block;
     }
     h1{
-        margin-top: 15px;
+        margin-top: 50px;
     }
     body{
         width: 100%;
     }
     #container{
         display: inline-grid;
+        grid-template-columns: 24% 24% 24%;
+        grid-template-rows: 40% 40%;
+        grid-column-gap: 70px;
+        grid-row-gap: 30px;
     }
     #sobre{
         display: block;   
@@ -186,6 +190,9 @@ a:hover{
     }
     #contato{
         display: block;   
+    }
+    #contatoImg{
+        display: block;
     }
 }
 
