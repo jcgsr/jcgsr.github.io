@@ -169,6 +169,12 @@ a:hover{
         margin: auto;
         display: block;
     }
+    h1{
+        margin-top: 15px;
+    }
+    body{
+        width: 100%;
+    }
     #container{
         display: inline-grid;
     }
