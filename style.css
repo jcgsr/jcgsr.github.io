@@ -182,7 +182,7 @@ a:hover{
 }
 
 @media only screen and (max-width: 600px) {
-    #grid{
-        flex-direction: column;
-        flex-wrap: nowrap;
+    .item{
+        width: 38px;
+        height: 20px;
 }
