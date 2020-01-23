@@ -154,3 +154,29 @@ a:hover{
     height: 200px;
     padding: 10px;
 }
+@media only screen and (max-width: 600px) {
+    .navbar {
+        margin: auto;        
+    }
+    #menu a{
+        padding: 20px 10px;
+    }
+    #menu {
+        display: inline-block;
+    }
+    #grid-container{  
+        grid-template-columns: auto;
+    }
+    #grid-sobre{
+        display: grid;
+        grid-template-columns: auto;
+        grid-row-gap: 30px;
+    }
+    #contatoImg{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+   
+}
