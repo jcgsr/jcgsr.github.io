@@ -184,6 +184,9 @@ a:hover{
     padding: 20px;
 }
 @media only screen and (max-width: 720px) {
+    h1{
+        margin-top: 15px;
+    }
     .navbar {
         margin: auto;        
     }
@@ -193,5 +196,18 @@ a:hover{
     #menu {
         display: inline-block;
     }
+    #grid-container{
+        grid-template-rows: 150px 150px 150px 150px 150px 150px;
+        
+    }
+    #grid-sobre{
+    display: grid;
+    grid-template-rows: 150px 150px;
+    grid-row-gap: 50px;
+    justify-content: center;
+      
+}
+    
+    
     
 }
