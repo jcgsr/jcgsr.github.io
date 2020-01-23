@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Work+Sans&display=swap');
 
 
+
 /*TAGS*/
 body{
     font-family: 'Work Sans', sans-serif;
@@ -50,50 +51,24 @@ a:hover{
 }
 
 /*IDS*/
-#grid-container{
-    height: 650px; 
-    width: 100%;   
+#grid-container{  
+  
     background: linear-gradient(35deg, rgb(49, 49, 104), brown, rgb(44, 34, 34));
     display: grid;
-    grid-template-columns: 390px 390px 390px;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    padding: 20px;
+    justify-content: space-around;
 
-}
-#piriquita{
-    transform: translate(70px, 40px);
-    text-align: center;
-    color: aliceblue;
-            
-}
-#negao{
-    transform: translate(120px, 40px);
-    text-align: center;
-    color: aliceblue;
-}
-#media{
-    transform: translate(150px, 40px);
-    text-align: center;
-    color: aliceblue;
-}
-#afinador{
-    transform: translate(70px, 50px);
-    text-align: center;
-    color: aliceblue;
-}
-#imc{
-    transform: translate(120px, 50px);
-    text-align: center;
-    color: aliceblue;
-}
-#gastos{
-    transform: translate(150px, 50px);
-    text-align: center;
-    color: aliceblue;
+
 }
 #grid-sobre{
     display: grid;
-    grid-template-columns: 390px 390px;
-    grid-column-gap: 50px;
+    grid-template-columns: 500px 500px;
+    grid-column-gap: 10px;
     justify-content: center;
+    
       
 }
 #imgT{
@@ -146,8 +121,6 @@ a:hover{
     font-size: 20px;
 }
 
-
-
 /*CLASSES*/
 .navbar{
     overflow: hidden;
@@ -164,7 +137,7 @@ a:hover{
     display: block;
     color: aliceblue;
     text-align: center;
-    padding: 16px 18px;
+    padding: 1px 18px;
 }
 .nav a:hover{
     color: yellow;
@@ -179,54 +152,5 @@ a:hover{
 .item{
     width: 300px;
     height: 200px;
-    padding: 20px;
-}
-@media only screen and (max-width: 720px) {
-    h1{
-        margin-top: 70px;
-    }
-    .navbar {
-        margin: auto;        
-    }
-    .navbar a{
-        padding: 1px 10px;
-        
-    }
-    #menu {
-        display: inline-block;
-    }
-    #grid-container{
-        grid-template-rows: auto auto auto;
-        grid-row-gap: 10px;
-        padding: 10px;
-        
-    }
-    #grid-sobre{
-        display: grid;
-        grid-template-rows: auto;
-        grid-row-gap: 10px;
-        margin-left: 20px;
-        justify-content: center;
-   }
-    #piriquita{
-    transform: translate(0px, 0px);
-    }
-    #negao{
-    transform: translate(0px, 10px);
-    }
-    #media{
-    transform: translate(0px, 20px);
-    }
-    #afinador{
-    transform: translate(0px, 30px);
-    }
-    #imc{
-        transform: translate(0px, 40px);
-    }
-    #gastos{
-        transform: translate(0px, 50px);
-    }
-    
-    
-    
+    padding: 10px;
 }
