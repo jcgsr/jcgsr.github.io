@@ -23,6 +23,7 @@ h3{
     font-size: 180%;
 }
 h2{
+    font-size: 200%;
     text-align: center;
     color: aliceblue;
 }
@@ -49,20 +50,12 @@ a:hover{
 }
 
 /*IDS*/
-#container{
-    display: flex;
-    flex-direction: column;
-          
-}
-#grid{
+#grid-container{
     height: 650px; 
     width: 100%;   
     background: linear-gradient(35deg, rgb(49, 49, 104), brown, rgb(44, 34, 34));
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: left;
-    align-items: left;
-
+    display: grid;
+    grid-template-columns: 390px 390px 390px;
 
 }
 #piriquita{
@@ -96,41 +89,39 @@ a:hover{
     text-align: center;
     color: aliceblue;
 }
-#sobre{
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    flex-direction: column;
-}
-#hist{
-    flex-shrink: 38;
+#grid-sobre{
+    display: grid;
+    grid-template-columns: 390px 390px;
+    grid-column-gap: 50px;
+    justify-content: center;
+      
 }
 #imgT{
-    font-size: 40px;
+    font-size: 30px;
 }
 #imgT:hover{
     transform: translateY(8px);    
 }
 #imgL{
-    font-size: 40px;
+    font-size: 30px;
 }
 #imgL:hover{
     transform: translateY(8px);    
 }
 #imgZ{
-    font-size: 40px;
+    font-size: 30px;
 }
 #imgZ:hover{
     transform: translateY(8px);    
 }
 #fcc{
-    font-size: 40px;
+    font-size: 30px;
 }
 #fcc:hover{
     transform: translateY(8px);    
 }
 #github{
-    font-size: 40px;
+    font-size: 30px;
 }
 #github:hover{
     transform: translateY(8px); 
@@ -142,10 +133,11 @@ a:hover{
 #contatoImg{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: space-around;
+    align-items: baseline;
     text-align: center;
-    width: 100%;    
+    width: 100%;
+
 }
 
 
@@ -175,39 +167,12 @@ a:hover{
     color: aliceblue;
 }
 .img{
-    width: 50px;
+    width: 30px;
 }
 .item{
-    width: 380px;
+    width: 300px;
     height: 200px;
-}
+    padding: 20px;
 
-@media only screen and (max-width: 600px) {
-    .item{
-        width: 50%;
-        height: 20%;
-    }
-    .navbar{
-        display: flex;
-        width: auto;
-    }
-    .navbar a{
-        float: right;
-        text-align: center;
-    }
-    #sobre{
-       flex-direction: row;
-        justify-content: left;
-    }
-    #contatoImg{
-        flex-direction: column;
-    }
-    #grid{
-        align-items: stretch; 
-        flex-direction: column;
-        justify-content: space-between;
-        height: 750px;
-    }
-    
- }
-    
+
+}
