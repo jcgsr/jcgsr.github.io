@@ -190,7 +190,7 @@ a:hover{
     }
     .navbar a{
         padding: 1px 10px;
-        float: left;
+        
     }
     #menu {
         display: inline-block;
@@ -210,6 +210,21 @@ a:hover{
    }
     #piriquita{
     transform: translate(0px, 0px);
+    }
+    #negao{
+    transform: translate(0px, 10px);
+    }
+    #media{
+    transform: translate(0px, 20px);
+    }
+    #afinador{
+    transform: translate(0px, 30px);
+    }
+    #imc{
+        transform: translate(0px, 40px);
+    }
+    #gastos{
+        transform: translate(0px, 50px);
     }
     
     
