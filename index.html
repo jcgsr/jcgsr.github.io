@@ -156,7 +156,11 @@
           
         <script>
             let today = new Date();
-            let formatDate = today.toDateString();
+            let formatDate = today.toLocaleDateString('pt-BR', {
+                day: '2-digit',
+                month: 'short',
+                year: 'numeric'
+            });
             let selectElement = document.getElementById('date');
             selectElement.innerHTML = formatDate;
         </script>
