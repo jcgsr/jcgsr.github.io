@@ -56,8 +56,7 @@ a:hover{
     display: grid;
     grid-template-columns: 500px 500px;
     grid-column-gap: 10px;
-    justify-content: center;
-    
+    justify-content: center;  
       
 }
 #imgT{
@@ -115,7 +114,7 @@ a:hover{
 
 /*CLASSES*/
 .navbar{
-    overflow: hidden;
+    
     background-color: rgb(131, 21, 21);
     position: fixed;
     top: 0;
