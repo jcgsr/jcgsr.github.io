@@ -157,9 +157,7 @@ a:hover{
     #menu {
         display: inline-block;
     }
-    #grid-container{  
-        grid-template-columns: auto;
-    }
+    
     #grid-sobre{
         display: grid;
         grid-template-columns: auto;
