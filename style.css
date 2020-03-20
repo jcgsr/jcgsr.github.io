@@ -51,18 +51,7 @@ a:hover{
 }
 
 /*IDS*/
-#grid-container{  
-  
-    background: linear-gradient(35deg, rgb(49, 49, 104), brown, rgb(44, 34, 34));
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-    padding: 20px;
-    justify-content: space-around;
 
-
-}
 #grid-sobre{
     display: grid;
     grid-template-columns: 500px 500px;
@@ -113,13 +102,16 @@ a:hover{
     text-align: center;
     width: 100%;
 }
-#menu{
-    float: right; 
-    padding: 15px;
+
+#carouselExampleCaptions{
+    text-align: center;
     margin: auto;
-    font-weight: bolder;
-    font-size: 20px;
 }
+#contato{
+    text-align: center;
+    color: aliceblue;
+}
+
 
 /*CLASSES*/
 .navbar{
@@ -139,13 +131,11 @@ a:hover{
     text-align: center;
     padding: 1px 18px;
 }
+
 .nav a:hover{
     color: yellow;
 }
-#contato{
-    text-align: center;
-    color: aliceblue;
-}
+
 .img{
     width: 30px;
 }
@@ -154,6 +144,9 @@ a:hover{
     height: 200px;
     padding: 10px;
 }
+.carousel-inner img {
+    margin: auto;
+  }
 @media only screen and (max-width: 768px) {
     .navbar {
         margin: auto;        
