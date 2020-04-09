@@ -9,6 +9,10 @@ body{
     margin-top: 40px;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 
 h1{
     text-align: center;
