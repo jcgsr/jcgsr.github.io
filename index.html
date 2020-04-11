@@ -1,10 +1,4 @@
-<!--18ou19.12.2019 terminado em 31.12.2019-->
-<!--8º site: meu portfólio!-->
-<!--Publicado no GitHub Pages! em 31.12.2019-->
-<!--Otimizado para celular em 01.01.2020 e depois 02.01.2020-->
-<!--Nova tentativa para celular agora usando flexbox em 22.01.2020-->
-<!--Voltei para o grid em 23.01.2020-->
-<!--Usando Bootstrap e Git 20.03.2020-->
+<!-- 09.04.2020 novo portfólio, concluído e publicado em 11.04.2020 -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -12,303 +6,195 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" type="image/x-icon" href="images/jota.ico">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css" media="screen">
-
-    <title>Portfolio de Jovane</title>
+    <title>DevJovane Portfolio</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/jota.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+   
 </head>
 
 <body>
-    <main>
-        <header>
 
+    <header>
+        <div class="logo">
 
+        </div>
 
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand"><img src="images/jota.png" alt="Logo de Jovane" width="40px"
-                        style="padding: 8px;"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#services" class="nav__link">Meus Serviços</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">Sobre</a></li>
+                <li class="nav__item"><a href="#work" class="nav__link">Meus Trabalhos</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <!-- Introduction -->
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            Olá, eu sou <strong>Jovane Rocha</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">front-end dev</p>
+        <img src="img/jovane&diana.jpg" alt="Foto de Jovane" class="intro__img" data-aos="fade-left">
+    </section>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
+    <!-- Services -->
+    <section class="my-services" id="services" data-aos="fade-right">
+        <h2 class="section__title section__title--services">O que eu faço</h2>
+        <div class="services">
+            <div class="service">
+                <h3>Tradutor Inglês-Português</h3>
+                <p data-aos="fade-right">
+                    Mais de 10 anos de experiência com tradução no par
+                    Inglês-Português. Traduzo <i>abstracts</i>, livros,
+                    documentos. Software para tradução: <a href="https://omegat.org/">OmegaT</a> . Também trabalho com legendagem. Atualmente,
+                    estou fazendo Pós em Tradução na 
+                    <a href="https://portal.fanese.edu.br/">Fanese</a>.
 
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" href="#contato" style="color: aliceblue;">Contato<span
-                                    class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#projeto" style="color: aliceblue;">Projetos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#hist" style="color: aliceblue;">Sobre</a>
-                        </li>
-
-
-                    </ul>
-
-                </div>
-            </nav>
-
-            <section id="apresentar">
-                <h1><br>Olá, eu sou Jovane</h1>
-                <h3>um desenvolvedor web junior</h3>
-            </section>
-        </header>
-        <br>
-
-        <section id="projeto">
-
-            <h2>Estes são os meus projetos</h2>
-            <br><br>
-
-            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel" mx-auto>
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-                    <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
-                    <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
-                    <li data-target="#carouselExampleCaptions" data-slide-to="5"></li>
-                    <li data-target="#carouselExampleCaptions" data-slide-to="6"></li>
-                    <li data-target="#carouselExampleCaptions" data-slide-to="7"></li>
-                    <li data-target="#carouselExampleCaptions" data-slide-to="8"></li>
-                    <li data-target="#carouselExampleCaptions" data-slide-to="9"></li>
-                    <li data-target="#carouselExampleCaptions" data-slide-to="10"></li>
-                    <li data-target="#carouselExampleCaptions" data-slide-to="11"></li>
-                    <li data-target="#carouselExampleCaptions" data-slide-to="12"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <a href="https://quirky-fermi-9dd416.netlify.com/"><img src="images/piriquitaWebApp.png"
-                                alt="Site da Piriquita" width="500" height="300px"></a>
-                        <div class="carousel-caption d-none d-md-block">
-
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="https://hardcore-euclid-fca293.netlify.com/"><img src="images/negaoWebApp.png"
-                                alt="Site do Negão" width="500" height="300px"></a>
-                        <div class="carousel-caption d-none d-md-block">
-
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="https://goofy-poincare-70cae0.netlify.com/"><img src="images/mediaEscolarWebApp.png"
-                                alt="Média Escolar" width="500" height="300px"></a>
-                        <div class="carousel-caption d-none d-md-block">
-
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="https://cocky-kalam-e5a441.netlify.com/index.html"><img src="images/afinadorWebApp.png"
-                                alt="Afinador de Violão" width="500" height="300px"></a>
-                        <div class="carousel-caption d-none d-md-block">
-
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="https://tender-easley-994bf4.netlify.com/"><img src="images/imcWebApp.png" alt="IMC"
-                                width="500" height="300px"></a>
-                        <div class="carousel-caption d-none d-md-block">
-
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="https://gastosmensais.000webhostapp.com/"><img src="images/firstPHPMySQL.png"
-                                alt="gastos" width="500" height="300px"></a>
-                        <div class="carousel-caption d-none d-md-block">
-
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="https://awesome-perlman-211a20.netlify.com/"><img src="images/vim.png" alt="vim"
-                                width="500" height="300px"></a>
-                        <div class="carousel-caption d-none d-md-block">
-
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="https://susipessoa.000webhostapp.com/"><img src="images/susi.png" alt="Susi"
-                                width="500" height="300px"></a>
-                        <div class="carousel-caption d-none d-md-block">
-
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="https://naughty-wescoff-cae4d2.netlify.com/"><img src="images/hcode.png"
-                                alt="Hcode-CalculadoraJS" width="500" height="300px"></a>
-                        <div class="carousel-caption d-none d-md-block">
-
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="https://eloquent-euler-c35730.netlify.com/"><img src="images/convjs.png"
-                                alt="Conversor JS" width="500" height="300px"></a>
-                        <div class="carousel-caption d-none d-md-block">
-
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="https://cranky-wright-340a76.netlify.com/"><img src="images/dict.png"
-                                alt="Extra School Material" width="500" height="300px"></a>
-                        <div class="carousel-caption d-none d-md-block">
-
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="https://stoic-heyrovsky-2c9c27.netlify.com/"><img src="images/resZends.png"
-                                alt="The ResZends" width="500" height="300px"></a>
-                        <div class="carousel-caption d-none d-md-block">
-
-                        </div>
-                    </div>
-
-                    <div class="carousel-item">
-                        <a href="https://dreamy-mestorf-f645a7.netlify.com/"><img src="images/tarefaLista.png"
-                                alt="Lista Tarefa JS" width="500" height="300px"></a>
-                        <div class="carousel-caption d-none d-md-block">
-
-                        </div>
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
+                </p>
             </div>
-        </section>
-    </main>
-    <br>
-    <div id="grid-sobre">
-        <div id="hist">
-            <h2>Eu sou Jovane Rocha,
-                um desenvolvedor web freelancer junior.</h2>
-            <p style="color: aliceblue;">Comecei a estudar programação em 2015 (Python, Java e C).
-                Depois de muitos (inúmeros) tutoriais e alguns cursos, adquiri
-                experiência no básico de lógica de programação. Foi desenvolvendo
-                um site em Flask em 2019 que entrei em contato de verdade com HTML e depois disso
-                não mais parei de estudar e aprender front-end development.
-                Com mais outros cursos de back-end no final de 2019, já posso me considerar um dev
-                full-stack.<br><br>
-                Tenho disponibilidade para trabalhos remotos. Se tiver algum interesse, por favor entre em <a
-                    href="#contato"><u>contato</u></a>.
+            <div class="service">
+                <h3>Web Developer</h3>
+                <p data-aos="fade-left">
+                    Comecei a estudar Python, Java e C em 2015 por hobby e, com isso, adquiri experiência no básico de lógica de programação. Foi desenvolvendo meu primeiro site em Flask (2019) que entrei em contato com HTML. Depois disso, não mais parei de estudar e aprender front-end development. Atualmente, estou estudando JavaScript, HTML5 e CSS3 para me aprimorar cada vez mais. O Próximo passo será Node.js para dominar o back-end e me tornar um desenvolvedor full stack.
+                </p>
+            </div>
+            <div class="service">
+                <h3>Professor de Inglês</h3>
+                <p data-aos="fade-left">
+                    Dei aula de Inglês (cursinhos e particular) de 2006 a 2013. Ainda em 2013,
+                    ingressei no ensino público, no qual estou até hoje como professor 
+                    consursado nos municípios de Riachuelo e Lagarto em Sergipe.
+                </p>
+            </div>
+        </div>
+
+        <a href="#work" class="btn">Meus Trabalhos</a>
+    </section>
+
+    <!-- About me -->
+    <section class="about-me" id="about" data-aos="fade-right">
+
+        <h2 class="section__title section__title--about">Quem sou eu</h2>
+        <p class="section__subtitle section__subtitle--about">Tradutor, web developer e professor</p>
+
+        <div class="about-me__body">
+
+            <p>
+                Pernambucano do Recife, Alvirrubro, Pai (abestalhado) de Diana,
+                Vegetariano, Enxadrista, Schopenhauriano, Socrático, Guitarrista (admirador da Les Paul), Bebedor de Whisky. Atualmente, moro em Aracaju, mas doido para voltar para Pernambuco. Usuário Linux desde sempre, usando Mint desde 2018. Estudando feito um louco JavaScript para poder realizar meu objetivo de me tornar um programador profissional. 
             </p>
         </div>
+        <img src="img/semi-opened-laptop-computer-turned-on-on-table-2047905.jpg" alt="Semi opened laptop"
+            class="about-me__img">
+    </section>
 
-        <div id="hab">
-            <h2>Ferramentas e Habilidades</h2>
-            <ul style="color: aliceblue; margin-left: 60px;">
-                <li>VIM</li>
-                <li>Sublime Text</li>
-                <li>VS Code</li>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>JavaScript</li>
-                <li>Gimp</li>
-                <li>Python (iniciante)</li>
-                <li>PHP</li>
-                <li>MySQL</li>
-                <li>Git</li>
-            </ul>
+    <!-- My Work -->
+    <section class="my-work" id="work">
+        <h2 class="section__title section__title--work">Meus Trabalhos</h2>
+        <h3>como desenvolvedor front-end iniciante</h3>
+
+        <div class="portfolio" data-aos="fade-left">
+
+            <!-- Portfolio item 01-->
+            <a href="https://quirky-fermi-9dd416.netlify.com/" class="portfolio__item">
+                <img src="img/piriquitaWebApp.png" alt="Site da Piriquita" class="portfolio__img">
+            </a>
+            <!-- Portfolio item 02-->
+            <a href="https://hardcore-euclid-fca293.netlify.com/" class="portfolio__item">
+                <img src="img/negaoWebApp.png" alt="Site do Negão" class="portfolio__img">
+            </a>
+            <!-- Portfolio item 03-->
+            <a href="https://goofy-poincare-70cae0.netlify.com/" class="portfolio__item">
+                <img src="img/mediaEscolarWebApp.png" alt="Média Escolar" class="portfolio__img">
+            </a>
+            <!-- Portfolio item 04-->
+            <a href="https://cocky-kalam-e5a441.netlify.com/index.html" class="portfolio__item">
+                <img src="img/afinadorWebApp.png" alt="Afinador de Violão" class="portfolio__img">
+            </a>
+            <!-- Portfolio item 05-->
+            <a href="https://tender-easley-994bf4.netlify.com/" class="portfolio__item">
+                <img src="img/imcWebApp.png" alt="IMC" class="portfolio__img">
+            </a>
+            <!-- Portfolio item 06-->
+            <a href="https://gastosmensais.000webhostapp.com/" class="portfolio__item">
+                <img src="img/firstPHPMySQL.png" alt="Gastos Mensais" class="portfolio__img">
+            </a>
+            <!-- Portfolio item 07-->
+            <a href="https://awesome-perlman-211a20.netlify.com/" class="portfolio__item">
+                <img src="img/vim.png" alt="VIM" class="portfolio__img">
+            </a>
+            <!-- Portfolio item 08-->
+            <a href="https://susipessoa.000webhostapp.com/" class="portfolio__item">
+                <img src="img/susi.png" alt="Susi" class="portfolio__img">
+            </a>
+            <!-- Portfolio item 09-->
+            <a href="https://naughty-wescoff-cae4d2.netlify.com/" class="portfolio__item">
+                <img src="img/hcode.png" alt="Hcode-CalculadoraJS" class="portfolio__img">
+            </a>
+            <!-- Portfolio item 10-->
+            <a href="https://eloquent-euler-c35730.netlify.com/" class="portfolio__item">
+                <img src="img/convjs.png" alt="Conversor JS" class="portfolio__img">
+            </a>
+            <!-- Portfolio item 11-->
+            <a href="https://cranky-wright-340a76.netlify.com/" class="portfolio__item">
+                <img src="img/dict.png" alt="Extra School Material" class="portfolio__img">
+            </a>
+            <!-- Portfolio item 12-->
+            <a href="https://stoic-heyrovsky-2c9c27.netlify.com/" class="portfolio__item">
+                <img src="img/resZends.png" alt="The ResZends" class="portfolio__img">
+            </a>
+
+            <a href="https://dreamy-mestorf-f645a7.netlify.com/" class="portfolio__item">
+                <img src="img/tarefaLista.png" alt="Lista Tarefa JS" class="portfolio__img">
+            </a>
+
         </div>
-    </div>
-    </div>
+        <p id="date"></p>
+    </section>
 
-    </main>
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="mailto:cabralguerra@gmail.com" class="footer-link"><strong>cabralguerra@gmail.com</strong></a>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a href="https://github.com/jcgsr" class="social-list__link">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
 
-    <br>
-    <br>
-    <div id="contato"><br>
-        <h2>Vamos trabalhar juntos...</h2>
-        <p><em>É só entrar em contato</em></p><br><br>
-
-        <div id="contatoImg">
-            <div id="imgT">
-                <a href="https://twitter.com/teufel8?ref_src=twsrc%5Etfw"><img class="img" src="images/twitter.gif"
-                        alt="Twitter">Twitter</a>
-            </div>
-            <div id="imgL">
-                <a href="https://br.linkedin.com/in/cabralguerra?trk=profile-badge"><img class="img"
-                        src="images/linkedin.gif" alt="Linkedin" style="width: 20px;">Linkedin</a>
-            </div>
-            <div id="imgZ">
-                <a href="https://api.whatsapp.com/send?phone=5579988284730&text=Entrar em contato"><img
-                        src="images/zap.gif" alt="Whatsapp" style="width: 40px;">Whatsapp</a>
-            </div>
-            <div id="fcc">
-                <a href="https://www.freecodecamp.org/jovane"><img src="images/fcc.gif" alt="Free Code Camp"
-                        style="width: 40px;">FCC</a>
-            </div>
-
-            <div id="github">
-                <a href="https://github.com/jcgsr"><img src="images/github.gif" alt="GitHub"
-                        style="width: 30px;">GitHub</a>
-            </div>
-
-            <div id="email">
-
-                <form action="mailto:cabralguerra@gmail.com" method="post">
-                    <input style="font-family: 'Work Sans', sans-serif; font-size: 20px; opacity: 0.8;
-                        background-color: rgb(32, 25, 25); color: aliceblue;" type="submit" value="Email"
-                        name="Enviar email">
-                </form>
-            </div>
-        </div>
-    </div>
-
-    </div>
-
-    <br><br><br><br>
-    <p id="date" style="color: aliceblue; text-align: center;"></p>
-    <hr style=" height:0; 
-        border:0; 
-        border-top:1px solid brown;">
-    <br>
-
-
-
-    <footer>
-        &copy;2019 - Portfólio criado e desenvolvido por Jovane Rocha. <br>
-        Todos os Direitos Reservados.
+            <li class="social-list__item">
+                <a href="https://br.linkedin.com/in/cabralguerra?trk=profile-badge" class="social-list__link">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a href="https://www.instagram.com/cabralguerra/?hl=pt-br" class="social-list__link">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a href="https://twitter.com/teufel8?ref_src=twsrc%5Etfw" class="social-list__link">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a href="https://api.whatsapp.com/send?phone=5579988284730&text=Entrar em contato" class="social-list__link">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </li>
+        </ul>
     </footer>
 
-    <script>
-        let today = new Date();
-        let formatDate = today.toLocaleDateString('pt-BR', {
-            day: '2-digit',
-            month: 'short',
-            year: 'numeric'
-        });
-        let selectElement = document.getElementById('date');
-        selectElement.innerHTML = formatDate;
-    </script>
 
 
-
-
-
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
