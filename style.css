@@ -258,6 +258,16 @@ header{
     display: inline-block;
 }
 
+#flagUSA, #brFlag{
+    width: 1.75em;
+    height: 1em;
+    cursor: pointer;
+    position: absolute;
+    right: 3.5em;
+    top: .65em;
+    z-index: 1000;
+}
+
 p a{
     text-decoration: none;
     color: var(--clr-accent);
@@ -290,6 +300,18 @@ p a{
         position: relative;
         left: -1.5em;
         width: calc(100% + 1.5em);
+    }
+    
+}
+@media (max-width: 580px){
+    #flagUSA, #brFlag{
+        width: 1.75em;
+        height: 1em;
+        cursor: pointer;
+        position: absolute;
+        right: 3.5em;
+        top: .75em;
+        z-index: 1000;
     }
 }
 
@@ -438,7 +460,7 @@ p a{
     margin-bottom: 2em;
 }
 
-#date{
+#date, #dateEng{
     color: var(--clr-accent);
     margin: 1em auto;
     position: relative;

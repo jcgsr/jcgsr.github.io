@@ -13,7 +13,7 @@ navLinks.forEach(link => {
 })
 
 const date = new Date()
-const currentDate = date.toLocaleDateString('pt-BR', {
+const currentDate = date.toLocaleDateString('en-US', {
     day: '2-digit',
     month: 'short',
     year: 'numeric'
